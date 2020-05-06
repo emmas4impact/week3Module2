@@ -22,6 +22,9 @@
         }
         .Row1{
             
+          
+           
+            
         }
         .secondCol{
             
@@ -29,19 +32,23 @@
             text-align: end !important;
             
         }
-        .thircol , .fouthCol, .fifCol{
+        .third , .fourth, .fifth{
             background-color: yellow;
+            height: 133px;
         }
-        .thircol{
+        .third{
             opacity: 0.5;
         }
-        .fouthCol{
+        .fourth{
             opacity: 0.8;
         }
         .cardrow{
             padding-top: 10px;
           
           justify-content: space-between;
+        }
+        .row2{
+            padding-top: 10px;
         }
     </style>
   </head>
@@ -64,27 +71,24 @@
     <p>Recreate this table using Bootstrap4 classes or styling without adding/removing any DOM element</p>
     <div class="container ">
         <div class="row Row1">
-          <div class="col FirstColumn">
+          <div class="col-6 FirstColumn">
             <p>First Column</p>
             <p> Height 400px</p>
             <p>Grenish background</p>
             <P> Text cebteres</P>
           </div>
-          <div class="col secondCol bg-primary ">
+          <div class="col-2 secondCol bg-primary ">
             <p>Second Column</p>
             <p> Text To the bottom</p>
             <p>Bold, blueish</p>
             <P> background</P>
           </div>
           <div class="col thircol">
-            Third Column Part 1
+            <div class="row third">Third Column Part 1</div>
+            <div class="row fourth">Third Column Part 2</div>
+            <div class="row fifth">Third Column Part 3</div>
           </div>
-          <div class="col fouthCol">
-            Third Column Part 2
-          </div>
-          <div class="col fifCol">
-            Third Column Part 3
-          </div>
+         
         </div>
         <div class="row cardrow">
             <div class="card" style="width: 18rem;">
@@ -118,7 +122,214 @@
                 </div>
             </div>
         </div>
+        <div class="row row2">
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="http://placehold.it/350" alt="Card image cap" data-toggle="tooltip" title="Billie Holiday">
+                <div class="card-body">
+                  <p class="card-text">Here you can place your video description, in order to inform the user of what to expect 
+                    by clicking on the link</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="http://placehold.it/350" alt="Card image cap" data-toggle="tooltip" title="Gambler Album 1975">
+                <div class="card-body">
+                  <p class="card-text">Here you can place your video description, in order to inform the user of what to expect 
+                    by clicking on the link</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="http://placehold.it/350" alt="Card image cap" data-toggle="tooltip" title="Beast of No Nation Album">
+                <div class="card-body">
+                  <p class="card-text">Here you can place your video description, in order to inform the user of what to expect 
+                    by clicking on the link</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">55 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="http://placehold.it/350" alt="Card image cap" data-toggle="tooltip" title="Miles Davis Album">
+                <div class="card-body">
+                  <p class="card-text">Here you can place your video description, in order to inform the user of what to expect 
+                    by clicking on the link</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="http://placehold.it/350" alt="Card image cap" data-toggle="tooltip" title="KSA Appreciation Album">
+                <div class="card-body">
+                  <p class="card-text">Here you can place your video description, in order to inform the user of what to expect 
+                    by clicking on the link</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="http://placehold.it/350" alt="Card image cap" data-toggle="tooltip" title="Asa 360 Album">
+                <div class="card-body">
+                  <p class="card-text">Here you can place your video description, in order to inform the user of what to expect 
+                    by clicking on the link</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="http://placehold.it/350" alt="Card image cap" data-toggle="tooltip" title="All eyez on me 1996">
+                <div class="card-body">
+                  <p class="card-text">Here you can place your video description, in order to inform the user of what to expect 
+                    by clicking on the link
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="http://placehold.it/350" alt="Card image cap" data-toggle="tooltip" title="Three Little Birds">
+                <div class="card-body">
+                  <p class="card-text">Here you can place your video description, in order to inform the user of what to expect 
+                    by clicking on the link</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="http://placehold.it/350" alt="Card image cap" data-toggle="tooltip" title="Tabula Rasa">
+                <div class="card-body">
+                  <p class="card-text">Here you can place your video description, in order to inform the user of what to expect 
+                  by clicking on the link</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="row">
+            <div class="card col-md-" >
+                <img src="http://placehold.it/350" class="card-img-top" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                <div class="card-footer text-muted">
+                    Posted on January 10, 2020 by <a href="#"> Admin</a>
+                </div>
+              </div>
+              <div class="col">
+                <div class="row">
+                    <div class="card">
+                        <div class="card-header">
+                          Find in my blog
+                        </div>
+                        <div class="card-body">
+                          <blockquote class="blockquote mb-0">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                          </blockquote>
+                        </div>
+                      </div>
+                
+                </div>
+                <div class="row">
+                    <div class="card">
+                        <div class="card-header">
+                          Categories
+                        </div>
+                        <div class="card-body">
+                          <blockquote class="blockquote mb-0">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                          </blockquote>
+                        </div>
+                      </div>
+                </div>
+                <div class="row">
+                    <div class="card">
+                        <div class="card-header">
+                          Widgets
+                        </div>
+                        <div class="card-body">
+                          <blockquote class="blockquote mb-0">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                            
+                          </blockquote>
+                        </div>
+                      </div>
+                
+                </div>
+              </div>
+          </div>
     </div>
+    
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
