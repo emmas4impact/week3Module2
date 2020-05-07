@@ -89,6 +89,9 @@
         footer{
             color:red;
         }
+        .blog-post-meta:hover{
+           
+        }
     </style>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
 </head>
@@ -264,7 +267,7 @@
 
                 <div class="blog-post">
                     <h2 class="blog-post-title">New feature</h2>
-                    <p class="blog-post-meta">December 14, 2013 by <a href="#">Chris</a></p>
+                    <p class="blog-post-meta" >December 14, 2013 by <a href="#">Chris</a></p>
 
                     <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean
                         lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce
@@ -283,7 +286,7 @@
 
                 <nav class="blog-pagination">
                     <a class="btn btn-outline-primary" href="#">Older</a>
-                    <a class="btn btn-outline-secondary disabled" href="#" tabindex="-1" aria-disabled="true">Newer</a>
+                    <a class="btn btn-outline-secondary "  tabindex="-1" aria-disabled="true" onclick=newerPost()>Newer</a>
                 </nav>
 
             </div><!-- /.blog-main -->
@@ -376,6 +379,63 @@
         
     }
     function ChangeColumnSize() {
+        
+        
+    }
+    function removeLink() {
+        let remove = document.querySelectorAll('aside > .p-4> ol>li')
+        console.log(remove)
+        for(let i=12; i<remove.length; i++){
+            remove[i].innerHTML=''
+            console.log(remove[i])
+           
+        }
+        
+    
+    }
+    function trimPost() {
+        let post = document.querySelectorAll(".blog-post")
+        const arr =[] 
+        post.forEach(element => {
+          element.getElementsByTagName("p")[1].innerText = 
+           element.getElementsByTagName("p")[1].innerText.substring(150)  
+        });
+    }
+    
+    function newerPost() {
+        let newer = document.querySelector('main > div > div')
+        let newPost = document.createElement('div')
+        newPost.innerHTML="New Post"
+        newPost.classList.add('blog-post')
+        //newlink.href='#'
+        newer.appendChild(newPost)
+        console.log(newer)
+        
+        
+        
+    }
+    document.getElementsByClassName(".blog-post-meta").onmouseover = function(){
+        alert(alerts[i].innerText)
+        
+    } 
+
+
+    function alertFunction() {
+        let alerts = document.querySelectorAll('.blog-post-meta')
+        let css ='blog-post-meta:hover'
+        
+        for (let i = 0; i < alerts.length; i++) {
+            if (alerts[i]) {
+                alert(alerts[i].innerText)
+                
+            }
+            else{
+                console.log("wrong input")
+            }
+            
+            
+            
+        }
         
         
     }
